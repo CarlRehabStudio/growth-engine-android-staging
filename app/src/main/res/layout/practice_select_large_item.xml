@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/screen_edge_horizontal_margin"
+    android:paddingStart="@dimen/screen_edge_horizontal_margin">
+
+    <com.google.android.apps.miyagi.development.ui.components.widget.ScalableImageView
+        android:id="@+id/select_large_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_large_image_height"
+        android:layout_marginEnd="@dimen/medium2_margin"
+        android:layout_marginStart="@dimen/medium2_margin"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        tools:src="@color/pink"/>
+
+    <TextView
+        android:id="@+id/select_large_item_label"
+        style="@style/FontH5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_margin"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/padding_0"
+        tools:text="@string/lorem_title"/>
+</LinearLayout>

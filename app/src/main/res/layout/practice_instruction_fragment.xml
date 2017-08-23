@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.apps.miyagi.development.ui.components.widget.AdjustableImageView
+            android:id="@+id/instruction_image_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            app:ratio="medium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/medium_margin"
+            android:paddingStart="@dimen/medium_margin">
+
+            <TextView
+                android:id="@+id/instruction_label_header"
+                style="@style/FontH2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_30"
+                tools:text="Choosing your online presence"/>
+
+            <TextView
+                android:id="@+id/instruction_label_description"
+                style="@style/FontBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lorem_long"/>
+
+            <TextView
+                android:id="@+id/instruction_label_question"
+                style="@style/FontH5medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_22"
+                tools:text="What do you think Addie should set up first: Social media profile or a mobile app?"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

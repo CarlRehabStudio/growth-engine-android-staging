@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dashboard_user_progress_height"
+    android:background="@drawable/bg_topic">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/screen_edge_horizontal_margin"
+        android:paddingStart="@dimen/screen_edge_horizontal_margin"
+        android:paddingTop="@dimen/medium_margin">
+
+        <TextView
+            android:id="@+id/label_progress"
+            style="@style/FontH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:textColor="@color/black_87"
+            tools:text="@string/lorem_short_label"/>
+
+        <com.google.android.apps.miyagi.development.ui.dashboard.view.TopicProgressBar
+            android:id="@+id/view_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dashboard_user_progress_bar_height"
+            android:paddingEnd="@dimen/dashboard_user_progress_padding"
+            app:cornerRadius="@dimen/progress_bar_corner_radius"/>
+
+        <TextView
+            android:id="@+id/label_description"
+            style="@style/FontH5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dashboard_user_progress_description_padding"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingTop="@dimen/small_margin"
+            android:textColor="@color/black_54"
+            tools:text="@string/lorem_short"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/dashboard_user_progress_icon_width"
+        android:layout_height="@dimen/dashboard_user_progress_icon_height"
+        android:layout_gravity="center_vertical|end"
+        android:paddingEnd="@dimen/dashboard_user_progress_image_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_cert"/>
+</FrameLayout>

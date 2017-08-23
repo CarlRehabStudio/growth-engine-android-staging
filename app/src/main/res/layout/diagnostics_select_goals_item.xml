@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:background="@color/french_blue">
+
+            <TextView
+                android:id="@+id/diagnostics_step_three_text_item"
+                style="@style/FontH5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/medium2_margin"
+                tools:text="Make it easy for people to find me on the web"
+                tools:textColor="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/diagnostics_step_three_icon_background_item"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:minWidth="@dimen/diagnostics_step_three_right_background_width">
+
+                <ImageView
+                    android:id="@+id/diagnostics_step_three_icon_item"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/medium_margin"
+                    android:scaleType="center"
+                    tools:src="@drawable/ic_check"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

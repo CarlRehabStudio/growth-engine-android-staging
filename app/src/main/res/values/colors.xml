@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorLightGrey">#D6D6D6</color>
+    <color name="colorDarkGrey">#FF7B7B7B</color>
+    <color name="colorBlue">#FF4285f4</color>
+    <color name="colorApla">#50FFFFFF</color>
+    <color name="colorLessonSelectedBackground">#FFE5F6FE</color>
+    <color name="strikeLine">#e53935</color>
+    <!-- STYLE GUIDE: Color Palette - START -->
+    <color name="yellow">#FFFFC618</color>
+    <color name="red">#FFDD2C00</color>
+    <color name="green">#FF00BFA5</color>
+    <color name="green_right">#FF8BC34A</color>
+    <color name="black_87">#FF212121</color>
+    <color name="black_54">#FF757575</color>
+    <color name="black_30">#FFB2B2B2</color>
+    <color name="separator">#DCDCDC</color>
+    <color name="black_38">#FF9E9E9E</color>
+    <color name="dark_blue_70">#FFC6CCE8</color>
+    <color name="green_70">#FFB3ECE4</color>
+    <color name="black_16">#29000000</color>
+    <color name="black_12">#DCDCDC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_on_blue">#FFCFD8DC</color>
+    <color name="white_30">#4BFFFFFF</color>
+    <color name="white_40">#28FFFFFF</color>
+    <color name="white_50_on_darkblue">#FFA0AAD9</color>
+    <color name="white_70">#BAFFFFFF</color>
+    <color name="pale_grey">#E8EAF6</color>
+    <color name="iris">#FF5C6BC0</color>
+    <color name="tomato">#FFE53935</color>
+    <color name="french_blue">#4054b2</color>
+    <color name="select_large_header_undefined">#00acc1</color>
+    <color name="select_large_header_selected">#f57c00</color>
+    <color name="select_large_header_unselected">#6600acc1</color>
+    <color name="diagnostics_progress_color">#03a9f4</color>
+    <color name="pink">#ff3f80</color>
+    <!-- STYLE GUIDE: Color Palette - END -->
+</resources>

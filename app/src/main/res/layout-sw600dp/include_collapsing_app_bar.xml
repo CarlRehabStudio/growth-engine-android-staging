@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:contentScrim="@color/white"
+        app:expandedTitleGravity="center"
+        app:expandedTitleTextAppearance="@style/ExpandedToolbarTitle">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/expanded_toolbar_height"
+            android:background="@color/white"
+            app:layout_collapseMode="none"/>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat"
+            app:titleTextAppearance="@style/ToolbarTitle"/>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.AppBarLayout>

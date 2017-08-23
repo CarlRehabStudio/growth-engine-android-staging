@@ -1,0 +1,7 @@
+<resources>
+    <string name="register_market_selection_title">Sprache/Land auswählen</string>
+
+    <string name="error_first_request_failed">Leider ist etwas schiefgelaufen! Bitte überprüfen Sie Ihre Internetverbindung.</string>
+    <string name="error_first_request_failed_cta">Nochmal versuchen</string>
+    
+</resources>

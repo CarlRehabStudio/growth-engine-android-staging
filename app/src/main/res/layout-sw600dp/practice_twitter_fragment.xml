@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/screen_edge_vertical_margin">
+
+        <TextView
+            android:id="@+id/twitter_label_question"
+            style="@style/FontH5medium.ActivityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Which do you think works best?"/>
+
+        <ImageView
+            android:id="@+id/twitter_image_logo"
+            android:layout_width="@dimen/twitter_image_size"
+            android:layout_height="@dimen/twitter_image_size"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_margin"/>
+
+        <TextView
+            android:id="@+id/twitter_label_logo_title"
+            style="@style/FontH2"
+            android:layout_width="@dimen/practice_content_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/screen_edge_horizontal_margin"
+            android:layout_marginStart="@dimen/screen_edge_horizontal_margin"
+            android:gravity="center_horizontal"
+            android:paddingBottom="0dp"
+            android:paddingTop="@dimen/small_margin"
+            tools:text="Knead To Know Bakery"/>
+
+        <TextView
+            android:id="@+id/twitter_label_logo_subtitle"
+            style="@style/FontH5"
+            android:layout_width="@dimen/practice_content_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/screen_edge_horizontal_margin"
+            android:layout_marginStart="@dimen/screen_edge_horizontal_margin"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingTop="0dp"
+            tools:text="About Us"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_margin"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/twitter_image_instruction_bg"
+                android:layout_width="@dimen/twitter_page_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/twitter_rect"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:id="@+id/twitter_label_instruction"
+                style="@style/FontBody"
+                android:layout_width="@dimen/twitter_page_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="5"
+                android:paddingEnd="@dimen/twitter_textview_pager_padding"
+                android:paddingStart="@dimen/twitter_textview_pager_padding"
+                tools:text="Swipe to select the best answer, then hit SUBMIT."/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/twitter_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/twitter_page_height"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:overScrollMode="never"/>
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_margin"/>
+    </LinearLayout>
+</ScrollView>

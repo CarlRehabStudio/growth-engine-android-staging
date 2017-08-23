@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?selectableItemBackground"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:paddingEnd="@dimen/medium_margin"
+              android:paddingStart="@dimen/medium_margin">
+
+    <TextView
+        android:id="@+id/legal_title_item"
+        style="@style/FontH5medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:lineSpacingExtra="0dp"
+        tools:text="Legal information"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_right"/>
+</LinearLayout>

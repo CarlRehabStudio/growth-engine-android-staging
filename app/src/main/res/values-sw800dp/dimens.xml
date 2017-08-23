@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="statistics_progress_size">240dp</dimen>
+    <dimen name="statistics_progress_small_margin">45dp</dimen>
+
+    <!-- ............................................................................ Statistics -->
+    <dimen name="statistics_edge_horizontal_margin">64dp</dimen>
+</resources>

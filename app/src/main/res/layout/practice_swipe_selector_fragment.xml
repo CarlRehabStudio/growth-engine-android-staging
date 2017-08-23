@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/screen_edge_vertical_margin"
+        android:paddingTop="@dimen/padding_16">
+
+        <TextView
+            android:id="@+id/swipe_label_header"
+            style="@style/FontH5medium.ActivityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="What do you think Addie should set up first: Social media profile or a mobile app?"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/swipe_image_phone"
+                android:layout_width="@dimen/practice_swipe_selector_bg_phone_width"
+                android:layout_height="@dimen/practice_swipe_selector_bg_phone_height"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_phone"/>
+
+            <com.google.android.apps.miyagi.development.ui.practice.swipe.SwipeSelectorViewPager
+                android:id="@+id/swipe_view_pager"
+                android:layout_width="@dimen/practice_content_width"
+                android:layout_height="@dimen/practice_swipe_selector_page_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/practice_swipe_selector_page_margin_bottom"
+                android:overScrollMode="never"/>
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</ScrollView>

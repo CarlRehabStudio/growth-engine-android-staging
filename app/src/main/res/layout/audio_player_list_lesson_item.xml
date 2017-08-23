@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:padding="@dimen/medium_margin">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/medium_margin">
+
+        <TextView
+            android:id="@+id/label_header"
+            style="@style/FontCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/tiny_margin"
+            android:lineSpacingExtra="0sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="@string/lorem_long"/>
+
+        <TextView
+            android:id="@+id/label_title"
+            style="@style/FontH5"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="0sp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp"
+            android:paddingTop="@dimen/tiny_margin"
+            tools:text="@string/lorem_medium"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play"/>
+
+</LinearLayout>

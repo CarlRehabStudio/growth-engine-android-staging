@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/form_layout"
+        android:layout_width="@dimen/sign_in_content_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/screen_edge_vertical_margin"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingEnd="@dimen/sign_in_form_horizontal_padding"
+        android:paddingStart="@dimen/sign_in_form_horizontal_padding"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            app:met_floatingLabel="normal"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

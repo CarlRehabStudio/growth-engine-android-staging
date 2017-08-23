@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/medium_margin">
+
+    <com.google.android.apps.miyagi.development.ui.components.widget.AdjustableImageView
+        android:id="@+id/assessment_instruction_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:ratio="medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_margin">
+
+        <TextView
+            android:id="@+id/assessment_instruction_label_header"
+            style="@style/FontH2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="The online opportunity"/>
+
+        <TextView
+            android:id="@+id/assessment_instruction_label_description"
+            style="@style/FontBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Answer all questions correctly to earn your badge and progress to next topic."/>
+
+        <TextView
+            android:id="@+id/assessment_instruction_label_attempts_number_info"
+            style="@style/FontH5medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/medium2_margin"
+            tools:text="You have three attempts to pass an exam."
+            tools:visibility="visible"/>
+
+        <Space
+            android:id="@+id/assessment_instruction_bottom_space"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_margin"/>
+    </LinearLayout>
+</LinearLayout>

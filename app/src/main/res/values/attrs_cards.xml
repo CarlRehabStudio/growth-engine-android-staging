@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardsSelector">
+        <attr name="card_spacing" format="dimension"/>
+        <attr name="rotation_degrees" format="integer"/>
+        <attr name="max_width" format="dimension"/>
+    </declare-styleable>
+</resources>

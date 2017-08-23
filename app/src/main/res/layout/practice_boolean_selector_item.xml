@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:background="@color/black_38">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/boolean_selector_item_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_margin">
+
+            <TextView
+                android:id="@+id/boolean_selector_item_indicator"
+                style="@style/FontH5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="@string/lorem_short_label"/>
+
+            <TextView
+                android:id="@+id/boolean_selector_item_text"
+                style="@style/FontH2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="20.0sp"
+                tools:text="@string/lorem_short"/>
+
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingTop="@dimen/medium_margin">
+
+                <com.google.android.apps.miyagi.development.ui.components.widget.StrokeButton
+                    android:id="@+id/boolean_selector_item_positive"
+                    style="@style/CardsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/medium_margin"
+                    tools:text="YES"/>
+
+                <com.google.android.apps.miyagi.development.ui.components.widget.StrokeButton
+                    android:id="@+id/boolean_selector_item_negative"
+                    style="@style/CardsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="NO"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

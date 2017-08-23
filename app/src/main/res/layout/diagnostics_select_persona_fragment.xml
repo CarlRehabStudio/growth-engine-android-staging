@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/diagnostics_horizontal_margin"
+    android:paddingStart="@dimen/diagnostics_horizontal_margin"
+    tools:background="@color/french_blue">
+
+    <TextView
+        android:id="@+id/diagnostics_step_two_header"
+        style="@style/FontH2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingTop="@dimen/diagnostics_screen_padding_top"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:text="Create your learning plan"/>
+
+    <TextView
+        android:id="@+id/diagnostics_step_three_sub_header"
+        style="@style/FontH5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:textColor="@color/white_70"
+        tools:text="Tell us about you (select one)"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/diagnostics_step_three_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/diagnostics_list_padding_bottom"
+            android:paddingTop="@dimen/diagnostics_list_padding_top"/>
+    </LinearLayout>
+</LinearLayout>

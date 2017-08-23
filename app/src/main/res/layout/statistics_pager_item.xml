@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+    <com.google.android.apps.miyagi.development.ui.components.widget.ArcProgressBar
+        android:id="@+id/statistics_progress_bar"
+        android:layout_width="@dimen/statistics_progress_size"
+        android:layout_height="@dimen/statistics_progress_size"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/statistics_progress_horizontal_margin"
+        android:layout_marginStart="@dimen/statistics_progress_horizontal_margin"
+        app:final_arc_angle="@integer/statistics_progress_angle"
+        app:arc_angle="@integer/statistics_progress_init_angle"
+        app:arc_bottom_text_padding_horizontal="@dimen/medium_margin"
+        app:arc_bottom_text_padding_vertical="@dimen/small_margin"
+        app:arc_bottom_text_size="@dimen/statistics_progress_bottom_text_size"
+        app:arc_finished_color="@color/white"
+        app:arc_stroke_width="@dimen/statistics_progress_bar_stroke_width"
+        app:arc_suffix_text_padding="@dimen/statistics_progress_suffix_text_padding"
+        app:arc_suffix_text_size="@dimen/statistics_progress_suffix_text_size"
+        app:arc_text_color="@color/white"
+        app:arc_text_size="@dimen/statistics_progress_text_size"
+        app:arc_unfinished_color="@color/white_40"/>
+</FrameLayout>

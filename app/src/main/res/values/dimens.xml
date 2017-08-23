@@ -1,0 +1,205 @@
+<resources>
+
+    <item name="match_parent" type="dimen">-1</item>
+    <item name="wrap_content" type="dimen">-2</item>
+
+    <!-- ................................................................................ Common -->
+    <dimen name="horizontal_divider_height_dp">1dp</dimen>
+    <dimen name="horizontal_divider_height_px">2px</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="tiny_margin">4dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="medium2_margin">25dp</dimen>
+    <dimen name="large_margin">50dp</dimen>
+    <dimen name="large2_margin">48dp</dimen>
+    <dimen name="xlarge_margin">100dp</dimen>
+    <dimen name="screen_edge_horizontal_margin">16dp</dimen>
+    <dimen name="screen_edge_vertical_margin">16dp</dimen>
+    <dimen name="list_item_vertical_margin">8dp</dimen>
+
+    <dimen name="padding_0">0dp</dimen>
+    <dimen name="padding_7">7dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_22">22dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="padding_35">35dp</dimen>
+    <dimen name="padding_50">50dp</dimen>
+
+    <dimen name="default_display_screen_width">360dp</dimen>
+    <dimen name="list_progress_size">30dp</dimen>
+
+    <!-- Default text sizes, per the Android Design guidelines. -->
+    <dimen name="text_size_headline">28sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_toolbar_title">20sp</dimen>
+    <dimen name="text_size_subheader1">18sp</dimen>
+    <dimen name="text_size_subheader2">16sp</dimen>
+    <dimen name="text_size_subheader3">14sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+    <dimen name="text_size_button">14sp</dimen>
+    <dimen name="text_size_mini">10sp</dimen>
+
+    <dimen name="user_progress_bar_stroke_width">3dp</dimen>
+    <dimen name="progress_bar_corner_radius">5.5dp</dimen>
+    <dimen name="collapse_expand_icon_size">24dp</dimen>
+    <!-- ...................................................................... dashboard drawer -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- ............................................................................. dashboard -->
+    <dimen name="dashboard_parallax_header_image_width">276dp</dimen>
+    <dimen name="dashboard_parallax_header_title_height">64dp</dimen>
+    <dimen name="dashboard_parallax_header_description_height">64dp</dimen>
+    <dimen name="dashboard_topic_group_height">72dp</dimen>
+    <dimen name="dashboard_completed_topic_badge_height">25dp</dimen>
+    <dimen name="dashboard_completed_topic_badge_width">21dp</dimen>
+    <dimen name="dashboard_icon_size">36dp</dimen>
+    <dimen name="dashboard_button_start_min_width">   88dp</dimen>
+    <dimen name="dashboard_user_progress_padding">10dp</dimen>
+    <dimen name="dashboard_user_progress_description_padding">100dp</dimen>
+    <dimen name="dashboard_user_progress_icon_width">144dp</dimen>
+    <dimen name="dashboard_user_progress_icon_height">128dp</dimen>
+    <dimen name="dashboard_user_progress_height">140dp</dimen>
+    <dimen name="dashboard_user_progress_bar_height">11dp</dimen>
+    <dimen name="dashboard_user_progress_toolbar_icon_width">26dp</dimen>
+    <dimen name="dashboard_user_progress_toolbar_icon_height">31dp</dimen>
+    <dimen name="dashboard_user_progress_image_margin">4dp</dimen>
+    <dimen name="dashboard_header_cta_padding_start">12dp</dimen>
+    <dimen name="dashboard_menu_icon_margin_end">0dp</dimen>
+    <dimen name="offline_dashboard_horizontal_margin">0dp</dimen>
+    <dimen name="offline_dashboard_topic_item_end_margin">6dp</dimen>
+    <dimen name="offline_topic_item_end_margin">6dp</dimen>
+
+    <dimen name="navigation_drawer_width">@dimen/match_parent</dimen>
+    <!-- .......................................................................... Registration -->
+    <!-- Choose language list-->
+    <dimen name="register_language_item_size">40dp</dimen>
+    <dimen name="register_language_item_padding_start">@dimen/medium_margin</dimen>
+    <!-- .......................................................................... Sign in selection -->
+    <dimen name="sign_in_horizontal_margin">16dp</dimen>
+    <dimen name="sign_in_vertical_margin">16dp</dimen>
+    <dimen name="sign_in_login_button_min_height">54dp</dimen>
+    <dimen name="sign_in_content_width">@dimen/match_parent</dimen>
+    <dimen name="sign_in_form_horizontal_padding">@dimen/screen_edge_horizontal_margin</dimen>
+    <!-- ......................................................... Register email create account -->
+    <dimen name="register_email_section_vertical_margin">40dp</dimen>
+    <!-- ....................................................................... Navigation Menu -->
+    <dimen name="nav_menu_header_vertical_margin">40dp</dimen>
+    <dimen name="nav_item_image_size">24dp</dimen>
+    <!-- ................................................................................ Lesson -->
+    <dimen name="lesson_video_player_height">202dp</dimen>
+    <dimen name="lesson_list_item_height">88dp</dimen>
+    <dimen name="lesson_list_item_thumbnail_width">126dp</dimen>
+    <dimen name="lesson_list_item_thumbnail_height">71dp</dimen>
+    <dimen name="lesson_list_item_thumbnail_watched_width">51dp</dimen>
+    <dimen name="lesson_list_item_thumbnail_watched_height">35dp</dimen>
+    <dimen name="lesson_list_item_thumbnail_completed_size">41dp</dimen>
+    <dimen name="lesson_list_item_vertical_margin">19dp</dimen>
+    <dimen name="lesson_fab_size">40dp</dimen>
+    <dimen name="lesson_fab_elevation">3dp</dimen>
+    <!-- ..................................................................... Put into practice -->
+    <dimen name="practice_content_width">@dimen/match_parent</dimen>
+    <dimen name="practice_max_width">0dp</dimen>
+    <dimen name="practice_activity_width">@dimen/match_parent</dimen>
+    <dimen name="activity_put_into_practice_instruction_image_height">202dp</dimen>
+    <dimen name="practice_swipe_selector_page_width">155dp</dimen>
+    <dimen name="practice_swipe_selector_page_height">291dp</dimen>
+    <dimen name="practice_swipe_selector_bg_phone_width">180dp</dimen>
+    <dimen name="practice_swipe_selector_bg_phone_height">320dp</dimen>
+    <dimen name="practice_swipe_selector_page_circle_size">22dp</dimen>
+    <dimen name="practice_swipe_selector_page_margin_bottom">8dp</dimen>
+    <dimen name="practice_dialog_width">280dp</dimen>
+    <dimen name="practice_dialog_height">230dp</dimen>
+    <dimen name="practice_error_icon_size">40dp</dimen>
+    <!-- ................................................... Put into practice: Twitter activity -->
+    <dimen name="twitter_page_width">266dp</dimen>
+    <dimen name="twitter_page_height">150dp</dimen>
+    <dimen name="twitter_image_size">100dp</dimen>
+    <dimen name="twitter_view_pager_padding">46dp</dimen>
+    <dimen name="twitter_textview_pager_padding">64dp</dimen>
+    <!-- .................................................... Put into practice: Strike activity -->
+    <dimen name="strike_item_min_height">40dp</dimen>
+    <!-- ............................................. Put into practice: Switches text activity -->
+    <dimen name="switches_item_min_height">75dp</dimen>
+    <!-- ............................................. Put into practice: Select larger activity -->
+    <dimen name="select_large_header_text_size">36sp</dimen>
+    <dimen name="select_large_image_height">200dp</dimen>
+    <!-- ...................................................... Put into practice: Fortune wheel -->
+    <dimen name="practice_fortune_wheel_main_widget_height">250dp</dimen>
+    <dimen name="practice_fortune_wheel_main_widget_label_text_size">36sp</dimen>
+    <dimen name="practice_fortune_wheel_widget_instruction_icon_size">22dp</dimen>
+    <dimen name="practice_fortune_wheel_selected_sector_label_size">22dp</dimen>
+    <dimen name="practice_fortune_wheel_selected_sector_label_text_size">14sp</dimen>
+    <!-- ............................................................ Put into practice: Reorder -->
+    <dimen name="practice_reorder_circle_item_drag_handle_width">6dp</dimen>
+    <dimen name="practice_reorder_position_label_text_size">20sp</dimen>
+    <dimen name="practice_reorder_position_label_offset">60dp</dimen>
+    <dimen name="practice_reorder_circle_hole_offset">30dp</dimen>
+
+    <dimen name="practice_reorder_circle_hole_radius">30dp</dimen>
+    <dimen name="practice_reorder_circle_item_text_left_margin">90dp</dimen>
+    <dimen name="practice_reorder_minimal_item_height">100dp</dimen>
+    <!-- ................................................... Put into practice: Boolean selector -->
+    <dimen name="practice_boolean_card_min_height">280dp</dimen>
+    <dimen name="practice_boolean_card_button_width">88dp</dimen>
+    <dimen name="practice_boolean_card_button_height">36dp</dimen>
+    <!-- ....................................................... Put into practice: Image slider -->
+    <dimen name="practice_clock_min_height">320dp</dimen>
+    <!-- ....................................................................... Result activity -->
+    <dimen name="activity_result_image_height">202dp</dimen>
+    <!-- ............................................................................ My profile -->
+    <dimen name="dot_pager_indicator_active_dot_radius">8dp</dimen>
+    <dimen name="dot_pager_indicator_inactive_dot_radius">4dp</dimen>
+    <dimen name="paging_indicator_dot_diameter">7dp</dimen>
+    <dimen name="paging_indicator_gap">7dp</dimen>
+    <dimen name="profile_horizontal_margin">@dimen/medium_margin</dimen>
+    <dimen name="profile_vertical_margin">@dimen/medium2_margin</dimen>
+
+    <!-- ............................................................................ Statistics -->
+    <dimen name="statistics_progress_header_height">223dp</dimen>
+    <dimen name="statistics_progress_size">190dp</dimen>
+    <dimen name="statistics_progress_bar_stroke_width">10dp</dimen>
+    <dimen name="statistics_progress_horizontal_margin">90dp</dimen>
+    <dimen name="statistics_progress_text_size">57sp</dimen>
+    <dimen name="statistics_progress_bottom_text_size">12sp</dimen>
+    <dimen name="statistics_progress_suffix_text_size">26sp</dimen>
+    <dimen name="statistics_progress_suffix_text_padding">2sp</dimen>
+    <dimen name="statistics_badge_size">60dp</dimen>
+    <dimen name="statistics_badge_image_padding">12dp</dimen>
+
+    <!-- ............................................................................ Assessment -->
+    <dimen name="assessment_instruction_image_height">202dp</dimen>
+    <dimen name="assessment_test_item_icon_size">40dp</dimen>
+    <dimen name="assessment_result_image_height">202dp</dimen>
+    <dimen name="assessment_edge_horizontal_margin">16dp</dimen>
+
+    <!-- .......................................................................... Audio Player -->
+    <dimen name="audio_player_list_header_height">72dp</dimen>
+
+    <!-- ............................................................................ Diagnostics -->
+    <dimen name="diagnostics_step_one_image_width_item">110dp</dimen>
+    <dimen name="diagnostics_step_one_image_vertical_padding_item">40dp</dimen>
+    <dimen name="diagnostics_step_one_text_vertical_padding">6dp</dimen>
+    <dimen name="diagnostics_step_two_min_height_item">110dp</dimen>
+    <dimen name="diagnostics_step_two_image_width_item">70dp</dimen>
+    <dimen name="diagnostics_step_two_image_width_item_land">110dp</dimen>
+    <dimen name="diagnostics_step_three_right_background_width">60dp</dimen>
+    <dimen name="diagnostics_loading_progress_height">5dp</dimen>
+    <dimen name="diagnostics_bottom_divider_height">1dp</dimen>
+    <dimen name="diagnostics_screen_padding_top">44dp</dimen>
+    <dimen name="diagnostics_horizontal_margin">@dimen/medium_margin</dimen>
+    <dimen name="diagnostics_list_padding_top">@dimen/medium_margin</dimen>
+    <dimen name="diagnostics_list_padding_bottom">@dimen/medium_margin</dimen>
+
+    <!-- ............................................................................ Diagnostics -->
+    <dimen name="onboarding_image_size">360dp</dimen>
+    <dimen name="login_button_radius">3dp</dimen>
+
+    <!-- ............................................................................ OnBoarding -->
+    <dimen name="onboarding_content_width">@dimen/match_parent</dimen>
+
+</resources>

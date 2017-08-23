@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/diagnostics_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".ui.diagnostics.DiagnosticsActivity">
+
+    <FrameLayout
+        android:id="@+id/diagnostics_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.google.android.apps.miyagi.development.ui.practice.fortunewheel.NonSwipeableViewPager
+            android:id="@+id/diagnostics_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/diagnostics_bottom_divider_height"
+                android:background="#7a88c9"/>
+
+            <include
+                layout="@layout/pager_indicator_bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/diagnostics_error"
+        layout="@layout/include_fullscreen_error"
+        android:fitsSystemWindows="false"
+        tools:visibility="gone"/>
+
+    <include
+        android:id="@+id/diagnostics_preloader"
+        layout="@layout/include_fullscreen_preloader"
+        android:fitsSystemWindows="false"
+        tools:visibility="gone"/>
+</FrameLayout>

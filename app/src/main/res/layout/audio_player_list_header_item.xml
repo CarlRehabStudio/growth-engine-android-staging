@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/audio_player_list_header_height"
+    android:paddingLeft="@dimen/screen_edge_horizontal_margin"
+    android:paddingRight="@dimen/screen_edge_horizontal_margin">
+
+    <TextView
+        android:id="@+id/label_title"
+        style="@style/FontH5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lineSpacingExtra="0sp"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        tools:text="@string/lorem_long"/>
+
+</LinearLayout>

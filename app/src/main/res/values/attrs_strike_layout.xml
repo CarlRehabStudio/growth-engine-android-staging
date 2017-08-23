@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StrikeThroughLayout">
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="strikeHeight" format="dimension"/>
+        <attr name="lineColor" format="color"/>
+        <!-- FIXME not used in widget-->
+        <attr name="android:checked"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.offline.OfflineDashboardActivity">
+
+    <include layout="@layout/include_app_bar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/offline_dashboard_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <include
+            android:id="@+id/error_screen"
+            layout="@layout/include_fullscreen_error"
+            tools:visibility="gone"/>
+
+        <include
+            android:id="@+id/loader_screen"
+            layout="@layout/include_fullscreen_preloader"
+            tools:visibility="gone"/>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

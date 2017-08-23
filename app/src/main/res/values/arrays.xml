@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string-array name="licence_titles">
+        <item>Realm</item>
+        <item>Retrofit</item>
+        <item>RXJava</item>
+        <item>RXAndroid</item>
+        <item>OkHttp</item>
+        <item>Retrolambda</item>
+        <item>Glide</item>
+        <item>Junit</item>
+        <item>Dagger2</item>
+        <item>FlexibleAdapter</item>
+        <item>Typekit</item>
+        <item>AutoFitTextView</item>
+        <item>ButterKnife</item>
+        <item>Parceler</item>
+        <item>MaterialProgressBar</item>
+        <item>MaterialEditText</item>
+        <item>Lottie</item>
+    </string-array>
+    <integer-array name="licence_texts">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+</resources>

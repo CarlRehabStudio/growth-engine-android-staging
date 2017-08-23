@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_play_video"
+        tools:title="@string/play_video"
+        android:orderInCategory="100"
+        tools:ignore="MenuTitle"/>
+
+    <item
+        android:id="@+id/action_play_audio"
+        tools:title="@string/play_audio"
+        android:orderInCategory="200"
+        tools:ignore="MenuTitle"/>
+
+    <item
+        android:id="@+id/action_download_eject"
+        tools:title="@string/download_audio_file"
+        android:orderInCategory="300"
+        tools:ignore="MenuTitle"/>
+</menu>

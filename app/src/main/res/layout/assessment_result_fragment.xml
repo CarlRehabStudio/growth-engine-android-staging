@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/result_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.apps.miyagi.development.ui.components.widget.AdjustableImageView
+                    android:id="@+id/assessment_result_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/assessment_result_image_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:src="@drawable/ic_x_for_result"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_margin">
+
+                <TextView
+                    android:id="@+id/assessment_result_label_header"
+                    style="@style/FontH2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Unfortunately you didn't pass"/>
+
+                <TextView
+                    android:id="@+id/assessment_result_label_description"
+                    style="@style/FontBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="You can try to get your wrong questions right, just select the answer you think might be the correct one."/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/assessment_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

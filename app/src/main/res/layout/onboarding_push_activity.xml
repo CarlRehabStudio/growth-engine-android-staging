@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    tools:background="@color/black_38"
+    tools:context=".ui.onboarding.OnboardingPushActivity">
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/diagnostics_bottom_divider_height"
+            android:background="#33ffffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton
+                android:id="@+id/button_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/ButtonWithFontRobotoMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="PREV"
+                    />
+
+            </com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton>
+
+            <com.google.android.apps.miyagi.development.ui.components.widget.InkPageIndicator
+                android:id="@+id/bottom_nav_dot_pager_indicator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:animationDuration="@integer/animation_duration"
+                app:currentPageIndicatorColor="@color/white"
+                app:dotDiameter="@dimen/paging_indicator_dot_diameter"
+                app:dotGap="@dimen/paging_indicator_gap"
+                app:pageIndicatorColor="@color/white_30"/>
+
+            <com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/ButtonWithFontRobotoMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_arrow_right_button"
+                    tools:text="NEXT"
+                    />
+
+            </com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/onboarding_push_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"/>
+
+    <include
+        android:id="@+id/onboarding_error"
+        layout="@layout/include_fullscreen_error"
+        tools:visibility="gone"/>
+</RelativeLayout>

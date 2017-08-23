@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <com.google.android.apps.miyagi.development.ui.practice.reorder.widget.TransparentCircleLayout
+        android:id="@+id/practice_reorder_hole_layout"
+        android:layout_width="@dimen/practice_activity_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="@dimen/practice_reorder_minimal_item_height"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingLeft="@dimen/screen_edge_horizontal_margin"
+        android:paddingRight="@dimen/screen_edge_horizontal_margin"
+        android:paddingTop="@dimen/padding_0"
+        app:holeCircleLeftOffset="@dimen/practice_reorder_circle_hole_offset"
+        app:holeRadius="@dimen/practice_reorder_circle_hole_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/small_margin"
+            android:paddingStart="@dimen/practice_reorder_circle_item_text_left_margin">
+
+            <TextView
+                android:id="@+id/practice_reorder_item_text"
+                style="@style/FontH5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="@dimen/padding_16"
+                android:paddingStart="@dimen/padding_16"
+                tools:text="@string/lorem_short"/>
+
+            <LinearLayout
+                android:id="@+id/practice_reorder_drag_layout"
+                android:layout_width="@dimen/padding_22"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/practice_reorder_item_drag_handle"
+                    android:layout_width="@dimen/practice_reorder_circle_item_drag_handle_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_drag_2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.apps.miyagi.development.ui.practice.reorder.widget.TransparentCircleLayout>
+</FrameLayout>

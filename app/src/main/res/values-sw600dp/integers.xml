@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="diagnostics_step_two_text_column_weight">7</integer>
+</resources>

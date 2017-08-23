@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fitsSystemWindows="true"
+             tools:context=".ui.error.ErrorScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_cloud_off"/>
+
+        <TextView
+            android:id="@+id/error_label_message"
+            style="@style/ErrorScreenTextMessageStyle"
+            tools:text="@string/error_screen_message_user_offline"/>
+
+        <Button
+            android:id="@+id/error_button"
+            style="@style/ButtonBorderless.Blue"
+            tools:text="@string/error_screen_button_try_network_again"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/navigation_button"
+        style="?attr/toolbarNavigationButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:src="@drawable/ic_arrow_back"
+        android:tint="@color/black_87"/>
+</FrameLayout>

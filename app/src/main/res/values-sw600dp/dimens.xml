@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="tiny_margin">4dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="medium_margin">24dp</dimen>
+    <dimen name="medium2_margin">25dp</dimen>
+    <dimen name="large_margin">50dp</dimen>
+    <dimen name="large2_margin">48dp</dimen>
+    <dimen name="xlarge_margin">100dp</dimen>
+    <dimen name="list_item_vertical_margin">8dp</dimen>
+    <dimen name="padding_0">0dp</dimen>
+    <dimen name="padding_7">7dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_22">22dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="padding_35">35dp</dimen>
+    <dimen name="padding_50">50dp</dimen>
+
+    <dimen name="text_size_title_expanded">28sp</dimen>
+    <dimen name="expanded_toolbar_height">136dp</dimen>
+
+    <dimen name="horizontal_divider_height_dp">0.5dp</dimen>
+    <dimen name="horizontal_divider_height_px">1px</dimen>
+
+    <!-- Default text sizes, per the Android Design guidelines. -->
+    <dimen name="text_size_title">28sp</dimen>
+    <dimen name="text_size_toolbar_title">22sp</dimen>
+    <dimen name="text_size_subheader3">16sp</dimen>
+
+    <!-- Choose language list-->
+    <dimen name="register_language_item_padding_start">0dp</dimen>
+
+    <!-- .......................................................................... Sign in selection -->
+    <dimen name="sign_in_horizontal_margin">54dp</dimen>
+    <dimen name="sign_in_vertical_margin">30dp</dimen>
+    <dimen name="sign_in_form_horizontal_padding">0dp</dimen>
+    <dimen name="sign_in_with_provider_width">348dp</dimen>
+
+    <!-- ............................................................................... Profile -->
+    <dimen name="profile_vertical_margin">40dp</dimen>
+    <dimen name="profile_horizontal_margin">64dp</dimen>
+
+    <!-- ............................................................................ Diagnostics -->
+    <dimen name="diagnostics_step_two_min_height_item">170dp</dimen>
+    <dimen name="diagnostics_step_two_min_height_land_item">300dp</dimen>
+    <dimen name="diagnostics_screen_padding_top">94dp</dimen>
+    <dimen name="diagnostics_horizontal_margin">64dp</dimen>
+    <dimen name="diagnostics_list_padding_top">@dimen/tiny_margin</dimen>
+    <dimen name="diagnostics_list_padding_bottom">0dp</dimen>
+
+    <!-- Dashboard -->
+    <dimen name="navigation_drawer_width">320dp</dimen>
+    <dimen name="dashboard_header_cta_padding_start">@dimen/medium_margin</dimen>
+    <dimen name="dashboard_user_progress_padding">20dp</dimen>
+    <dimen name="dashboard_menu_icon_margin_end">8dp</dimen>
+    <dimen name="offline_dashboard_horizontal_margin">15dp</dimen>
+    <dimen name="offline_topic_item_end_margin">0dp</dimen>
+    <dimen name="offline_dashboard_topic_item_end_margin">15dp</dimen>
+
+    <!-- Error screen -->
+    <dimen name="error_width">280dp</dimen>
+
+    <!-- OnBoarding -->
+    <dimen name="onboarding_content_width">500dp</dimen>
+
+    <!-- ............................................................................ Statistics -->
+    <dimen name="statistics_progress_header_height">223dp</dimen>
+    <dimen name="statistics_progress_size">220dp</dimen>
+    <dimen name="statistics_progress_bar_stroke_width">12dp</dimen>
+    <dimen name="statistics_progress_horizontal_margin">90dp</dimen>
+    <dimen name="statistics_progress_small_margin">24dp</dimen>
+    <dimen name="statistics_progress_text_size">60sp</dimen>
+    <dimen name="statistics_progress_bottom_text_size">14sp</dimen>
+    <dimen name="statistics_progress_suffix_text_size">29sp</dimen>
+    <dimen name="statistics_progress_suffix_text_padding">4sp</dimen>
+    <dimen name="statistics_badge_size">60dp</dimen>
+    <dimen name="statistics_badge_image_padding">12dp</dimen>
+
+    <!-- ............................................................................ Assessment -->
+    <dimen name="assessment_test_item_icon_size">70dp</dimen>
+
+    <!-- ............................................................................ Statistics -->
+    <dimen name="statistics_edge_horizontal_margin">24dp</dimen>
+
+    <!-- ..................................................................... Put into practice -->
+    <dimen name="practice_content_width">500dp</dimen>
+    <dimen name="practice_max_width">@dimen/practice_content_width</dimen>
+
+    <dimen name="practice_swipe_selector_page_height">291dp</dimen>
+    <dimen name="practice_swipe_selector_page_margin_bottom">8dp</dimen>
+
+    <dimen name="practice_activity_width">370dp</dimen>
+
+    <!-- ....................................................... Put into practice: Select right -->
+    <dimen name="practice_select_right_max_width">500dp</dimen>
+
+    <!-- ................................................... Put into practice: Twitter activity -->
+    <dimen name="twitter_page_height">200dp</dimen>
+    <dimen name="twitter_page_width">300dp</dimen>
+
+    <!-- ....................................................... Put into practice: Image slider -->
+    <dimen name="practice_clock_min_height">320dp</dimen>
+
+    <!-- ............................................................ Put into practice: Reorder -->
+    <dimen name="practice_reorder_width">420dp</dimen>
+    <dimen name="practice_reorder_circle_hole_offset">44dp</dimen>
+    <dimen name="practice_reorder_position_label_offset">74dp</dimen>
+</resources>

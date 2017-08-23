@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="screen_edge_vertical_margin">24dp</dimen>
+    <dimen name="screen_edge_horizontal_margin">24dp</dimen>
+
+    <dimen name="profile_vertical_margin">40dp</dimen>
+    <dimen name="profile_horizontal_margin">64dp</dimen>
+
+    <dimen name="sign_in_content_width">432dp</dimen>
+
+    <!-- Dashboard -->
+    <dimen name="dashboard_user_progress_image_margin">12dp</dimen>
+
+    <!-- ............................................................................ Assessment -->
+    <dimen name="assessment_edge_horizontal_margin">64dp</dimen>
+</resources>

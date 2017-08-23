@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "284323918901",
+    "firebase_url": "https://gweb-miyagi-testing.firebaseio.com",
+    "project_id": "gweb-miyagi-testing",
+    "storage_bucket": "gweb-miyagi-testing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284323918901:android:2e335d49b9dad24e",
+        "android_client_info": {
+          "package_name": "com.google.android.apps.miyagi.development"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284323918901-kai5lt5m2lc85m21l10e6u0tl02dkqn0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.android.apps.miyagi.development",
+            "certificate_hash": "D7379F5B38B4DC095CCD9934B4B4A99AFE769AB7"
+          }
+        },
+        {
+          "client_id": "284323918901-sdvqracpv7a0hp5148mg6qrdkpvc191v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv5iexxBboZd7YBoO0rCnWQTH5rLm9pq8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284323918901-sdvqracpv7a0hp5148mg6qrdkpvc191v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "284323918901-231lc68s15d9u7rio5vhr63raiehltfh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.google.ios.apps.miyagi.development"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

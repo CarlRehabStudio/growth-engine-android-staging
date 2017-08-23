@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.statistics.StatisticsActivity">
+
+    <include layout="@layout/include_app_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--Fix auto scroll to bottom set descendantFocusability="blocksDescendants" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/progress_container"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/statistics_progress_small_margin"
+                android:paddingStart="@dimen/statistics_progress_small_margin"
+                android:paddingTop="20dp"/>
+
+            <include
+                android:id="@+id/section_item"
+                layout="@layout/expandable_header_item"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/statistics_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="@dimen/screen_edge_vertical_margin"
+                android:paddingLeft="@dimen/statistics_edge_horizontal_margin"
+                android:paddingRight="@dimen/statistics_edge_horizontal_margin"
+                android:paddingTop="@dimen/screen_edge_vertical_margin"
+                tools:listitem="@layout/item_statistics_badge"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

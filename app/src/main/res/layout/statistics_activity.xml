@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.statistics.StatisticsActivity">
+
+    <include layout="@layout/include_app_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--Fix auto scroll to bottom set descendantFocusability="blocksDescendants" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/statistics_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/statistics_progress_header_height"/>
+
+                <com.google.android.apps.miyagi.development.ui.components.widget.InkPageIndicator
+                    android:id="@+id/statistics_pager_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="@dimen/medium_margin"
+                    app:animationDuration="@integer/animation_duration"
+                    app:currentPageIndicatorColor="@color/white"
+                    app:dotDiameter="@dimen/paging_indicator_dot_diameter"
+                    app:dotGap="@dimen/paging_indicator_gap"
+                    app:pageIndicatorColor="@color/white_30"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/statistics_badge_title"
+                style="@style/SectionBar"
+                android:layout_width="match_parent"
+                tools:text="@string/lorem_short_label"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/statistics_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/medium_margin"
+                tools:listitem="@layout/item_statistics_badge"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

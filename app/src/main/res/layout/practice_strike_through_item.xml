@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/medium_margin"
+    android:orientation="vertical">
+
+    <com.google.android.apps.miyagi.development.ui.components.widget.StrikeThroughLayout
+        android:id="@+id/strike_through_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="@dimen/strike_item_min_height">
+
+        <TextView
+            android:id="@+id/strike_through_item_label"
+            style="@style/FontH5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="@string/lorem_short"/>
+    </com.google.android.apps.miyagi.development.ui.components.widget.StrikeThroughLayout>
+</LinearLayout>

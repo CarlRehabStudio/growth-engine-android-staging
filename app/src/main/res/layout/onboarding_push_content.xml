@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/screen_edge_vertical_margin"
+    android:paddingEnd="@dimen/screen_edge_horizontal_margin"
+    android:paddingStart="@dimen/screen_edge_horizontal_margin"
+    android:paddingTop="@dimen/screen_edge_vertical_margin"
+    tools:background="@color/black_54">
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <FrameLayout
+        android:layout_width="@dimen/onboarding_content_width"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/onboarding_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:scaleType="centerInside"
+            tools:src="@drawable/ilu_creating_plan"/>
+    </FrameLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/onboarding_header"
+            style="@style/FontH2"
+            android:layout_width="@dimen/onboarding_content_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            tools:text="@string/lorem_title"/>
+
+        <Switch
+            android:id="@+id/onboarding_push_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+</LinearLayout>

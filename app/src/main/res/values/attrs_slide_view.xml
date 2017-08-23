@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlideView">
+        <attr name="text" format="string"/>
+        <attr name="leftColor" format="color"/>
+        <attr name="rightColor" format="color"/>
+        <attr name="leftActiveColor" format="color"/>
+        <attr name="rightActiveColor" format="color"/>
+        <attr name="leftDrawable" format="reference"/>
+        <attr name="rightDrawable" format="reference"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textPaddingVertical" format="dimension"/>
+        <attr name="textPaddingHorizontal" format="dimension"/>
+        <attr name="imageWidth" format="dimension"/>
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="drawableRight" format="reference"/>
+    </declare-styleable>
+</resources>

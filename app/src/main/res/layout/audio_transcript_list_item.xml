@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/medium_margin"
+    android:paddingStart="@dimen/medium_margin"
+    tools:context=".ui.audio.transcript.AudioTranscriptActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label_key_learnings"
+            style="@style/FontH5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="@dimen/padding_30"
+            tools:text="Key learnings"/>
+
+        <WebView
+            android:id="@+id/web_view_lesson_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_30"
+            android:paddingTop="0dp"
+            tools:text="@string/lorem_long"/>
+    </LinearLayout>
+
+    <View style="@style/HorizontalDivider"/>
+
+    <TextView
+        android:id="@+id/label_transcript_title"
+        style="@style/FontH5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="@dimen/padding_22"
+        android:paddingTop="@dimen/padding_30"
+        android:textColor="@color/black_87"
+        tools:text="View transcript"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/web_view_transcript_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_30"
+            android:layout_marginTop="0dp"/>
+
+    </LinearLayout>
+</LinearLayout>

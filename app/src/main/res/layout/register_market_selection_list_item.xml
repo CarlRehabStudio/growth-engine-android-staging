@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_topic"
+              android:clickable="true"
+              android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider_top"
+        style="@style/HorizontalDividerOnePx"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingBottom="@dimen/padding_16"
+        android:paddingEnd="@dimen/padding_16"
+        android:paddingStart="@dimen/register_language_item_padding_start"
+        android:paddingTop="@dimen/padding_16">
+
+        <ImageView
+            android:id="@+id/register_choose_language_item_image"
+            android:layout_width="@dimen/register_language_item_size"
+            android:layout_height="@dimen/register_language_item_size"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/register_choose_language_item_label"
+            style="@style/FontH5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:layout_weight="1"
+            tools:text="@string/lorem_short"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_bottom"
+        style="@style/HorizontalDividerOnePx"/>
+</LinearLayout>

@@ -1,0 +1,287 @@
+<resources>
+
+    <style name="ExpandedToolbarTitle" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/text_size_title_expanded</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+    </style>
+
+    <style name="ToolbarWhiteTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="ToolbarGrayTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/black_54</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_size_toolbar_title</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/black_87</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay.White" parent="AppTheme.AppBarOverlay">
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ErrorScreenTextMessageStyle">
+        <item name="android:layout_width">@dimen/error_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/medium_margin</item>
+        <item name="android:paddingLeft">@dimen/medium_margin</item>
+        <item name="android:paddingRight">@dimen/medium_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_subheader2</item>
+    </style>
+
+    <style name="ButtonBorderless" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+    </style>
+
+    <style name="ButtonBorderless.Blue">
+        <item name="android:textColor">@color/french_blue</item>
+    </style>
+
+    <style name="ButtonLight">
+        <item name="font">roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:lineSpacingExtra">-2sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ButtonLightTheme">
+        <item name="colorButtonNormal">@color/white</item>
+    </style>
+
+    <style name="PreloaderMessageStyle">
+        <item name="android:layout_marginLeft">@dimen/medium_margin</item>
+        <item name="android:layout_marginRight">@dimen/medium_margin</item>
+        <item name="android:layout_marginTop">@dimen/medium_margin</item>
+        <item name="android:layout_marginBottom">@dimen/medium_margin</item>
+        <item name="android:layout_width">@dimen/error_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_subheader1</item>
+    </style>
+
+    <style name="ProgressBarWhite">
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="HorizontalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/horizontal_divider_height_dp</item>
+        <item name="android:background">@color/separator</item>
+    </style>
+
+    <style name="HorizontalDividerOnePx">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/horizontal_divider_height_px</item>
+        <item name="android:background">@color/separator</item>
+    </style>
+
+    <style name="VerticalDivider">
+        <item name="android:layout_width">@dimen/horizontal_divider_height_dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/separator</item>
+    </style>
+
+    <style name="VerticalDividerOnePx">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/separator</item>
+    </style>
+
+    <style name="LoginButton" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="font">roboto_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingStart">@dimen/medium_margin</item>
+        <item name="android:paddingBottom">@dimen/padding_22</item>
+        <item name="android:paddingTop">@dimen/padding_22</item>
+        <item name="android:drawablePadding">@dimen/padding_30</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="DashboardStartButton">
+        <item name="font">roboto_medium</item>
+        <item name="android:minWidth">@dimen/dashboard_button_start_min_width</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">-2sp</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="DashboardStartButtonTheme" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="font">roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+    </style>
+
+    <style name="TextInputLayout" parent="FontH4">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="SelectLargeHeaderText">
+        <item name="font">roboto_light</item>
+        <item name="android:textSize">@dimen/select_large_header_text_size</item>
+        <item name="android:textColor">@color/select_large_header</item>
+        <item name="android:layout_marginEnd">@dimen/medium2_margin</item>
+    </style>
+
+    <style name="SectionBar" parent="FontH5">
+        <item name="android:layout_height">@dimen/dashboard_topic_group_height</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FontH5medium.ActivityTitle">
+        <item name="font">roboto_light</item>
+        <item name="textColor">@color/black_54</item>
+        <item name="android:paddingTop">@dimen/padding_16</item>
+        <item name="android:paddingBottom">@dimen/padding_30</item>
+        <item name="android:layout_marginStart">@dimen/screen_edge_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/screen_edge_horizontal_margin</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- STYLE GUIDE: Font Book - START -->
+    <style name="FontH1">
+        <item name="font">roboto_light</item>
+        <item name="android:textSize">@dimen/text_size_headline</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">@dimen/medium_margin</item>
+        <item name="android:paddingBottom">@dimen/medium_margin</item>
+    </style>
+
+    <style name="FontH2">
+        <item name="font">roboto_light</item>
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:paddingTop">@dimen/medium_margin</item>
+        <item name="android:paddingBottom">@dimen/medium_margin</item>
+    </style>
+
+    <style name="FontH3">
+        <item name="font">roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_subheader1</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:paddingTop">@dimen/medium_margin</item>
+        <item name="android:paddingBottom">@dimen/medium_margin</item>
+    </style>
+
+    <style name="FontH4">
+        <item name="font">roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_subheader2</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:paddingTop">@dimen/medium_margin</item>
+        <item name="android:paddingBottom">@dimen/medium_margin</item>
+    </style>
+
+    <style name="FontH5">
+        <item name="font">roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_subheader3</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:paddingTop">@dimen/medium_margin</item>
+        <item name="android:paddingBottom">@dimen/medium_margin</item>
+    </style>
+
+    <style name="FontH4medium">
+        <item name="font">roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_subheader2</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:paddingTop">@dimen/medium_margin</item>
+        <item name="android:paddingBottom">@dimen/medium_margin</item>
+    </style>
+
+    <style name="FontH5medium">
+        <item name="font">roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_subheader3</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:paddingTop">@dimen/medium_margin</item>
+        <item name="android:paddingBottom">@dimen/medium_margin</item>
+    </style>
+
+    <style name="FontCaption">
+        <item name="font">roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_caption</item>
+        <item name="android:textColor">@color/black_54</item>
+    </style>
+
+    <style name="FontBody">
+        <item name="font">roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/black_54</item>
+    </style>
+
+    <style name="FontLink">
+        <item name="font">roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:textColor">@color/french_blue</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:paddingTop">@dimen/medium_margin</item>
+        <item name="android:paddingBottom">@dimen/medium_margin</item>
+    </style>
+
+    <style name="FontLinkMedium">
+        <item name="font">roboto_medium</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:textColor">@color/french_blue</item>
+        <item name="android:paddingTop">@dimen/medium_margin</item>
+        <item name="android:paddingBottom">@dimen/medium_margin</item>
+    </style>
+
+    <style name="FontMini">
+        <item name="font">roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_mini</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/white_50_on_darkblue</item>
+    </style>
+
+    <style name="CardsButton" parent="Widget.AppCompat.Button">
+        <item name="font">roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="PlayerCurrentLessonLabelStyle">
+        <item name="android:textSize">@dimen/text_size_subheader3</item>
+        <item name="font">roboto_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dark_blue_70</item>
+    </style>
+
+
+    <style name="PlayerTimeLabelStyle">
+        <item name="android:textSize">@dimen/text_size_mini</item>
+        <item name="font">roboto_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white_50_on_darkblue</item>
+    </style>
+
+    <!-- STYLE GUIDE: Font Book - END -->
+</resources>

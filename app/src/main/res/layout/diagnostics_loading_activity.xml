@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/diagnostics_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:background="@color/french_blue"
+    tools:context=".ui.diagnostics.DiagnosticsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"/>
+
+        <ImageView
+            android:id="@+id/diagnostics_loading_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:scaleType="centerInside"
+            android:src="@drawable/ilu_creating_plan"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/screen_edge_vertical_margin"
+            android:paddingStart="@dimen/screen_edge_vertical_margin">
+
+            <TextView
+                android:id="@+id/diagnostics_loading_header"
+                style="@style/FontH2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+                android:paddingBottom="@dimen/small_margin"
+                android:textColor="@color/white"
+                tools:text="@string/diagnostics_step_one_header"/>
+
+            <TextView
+                android:id="@+id/diagnostics_loading_sub_header"
+                style="@style/FontH5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:gravity="top|center_horizontal"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:textColor="@color/white_70"
+                tools:text="@string/lorem_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/diagnostics_loader"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/diagnostics_loading_progress_height"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:indeterminate="true"
+        app:mpb_indeterminateTint="@color/diagnostics_progress_color"
+        app:mpb_progressStyle="horizontal"
+        app:mpb_useIntrinsicPadding="false"/>
+
+    <include
+        android:id="@+id/diagnostics_loading_error"
+        layout="@layout/include_fullscreen_error"
+        android:fitsSystemWindows="false"
+        tools:visibility="gone"/>
+</FrameLayout>

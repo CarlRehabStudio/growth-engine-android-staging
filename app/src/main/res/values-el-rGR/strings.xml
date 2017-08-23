@@ -1,0 +1,7 @@
+<resources>
+    <string name="register_market_selection_title">Επιλέξτε γλώσσα/χώρα</string>
+
+    <string name="error_first_request_failed">Ωχ, παρουσιάστηκε κάποιο σφάλμα. Παρακαλούμε ελέγξτε τη σύνδεση στο διαδίκτυο.</string>
+    <string name="error_first_request_failed_cta">ΠΡΟΣΠΑΘΗΣΤΕ ΞΑΝΑ</string>
+
+</resources>

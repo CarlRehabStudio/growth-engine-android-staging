@@ -1,0 +1,7 @@
+<resources>
+    <string name="register_market_selection_title">Choose your language/country</string>
+
+    <string name="error_first_request_failed">Oops something went wrong. Please check your internet connection.</string>
+    <string name="error_first_request_failed_cta">Try again</string>
+    
+</resources>

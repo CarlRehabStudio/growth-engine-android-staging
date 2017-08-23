@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.register.RegisterActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <include
+            layout="@layout/include_collapsing_app_bar_flat"/>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include
+        android:id="@+id/error_screen"
+        layout="@layout/include_fullscreen_error"
+        android:visibility="gone"
+        tools:visibility="gone"/>
+
+    <include
+        android:id="@+id/preloader_screen"
+        layout="@layout/include_fullscreen_preloader"
+        android:visibility="gone"
+        tools:visibility="gone"/>
+
+</FrameLayout>

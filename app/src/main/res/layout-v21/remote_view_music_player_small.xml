@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/title_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
+            android:visibility="gone"
+            tools:text="Saycet"/>
+
+        <TextView
+            android:id="@+id/text_view_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Notification"
+            tools:text="Through the window"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_play_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/title_container">
+
+        <FrameLayout
+            android:id="@+id/button_play_toggle"
+            style="?android:actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/image_view_play_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play_notification"
+                android:tint="@color/black_87"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/button_backward"
+            style="?android:actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/button_play_toggle"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image_view_backward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_player_1_5_reply"
+                android:tint="@color/black_87"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/button_forward"
+            style="?android:actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/button_play_toggle"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image_view_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_player_1_5_forward"
+                android:tint="@color/black_87"/>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

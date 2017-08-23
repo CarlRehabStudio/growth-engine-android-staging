@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/exam_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/screen_edge_vertical_margin"
+            android:paddingEnd="@dimen/assessment_edge_horizontal_margin"
+            android:paddingStart="@dimen/assessment_edge_horizontal_margin"
+            android:paddingTop="@dimen/screen_edge_vertical_margin">
+
+            <TextView
+                android:id="@+id/label_question"
+                style="@style/FontH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:font="roboto_medium"
+                tools:ignore="MissingPrefix"
+                tools:text="Paying to rent space on a server is the online equivalent of...."/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

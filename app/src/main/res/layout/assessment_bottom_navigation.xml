@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/assessment_bottom_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:background="@color/french_blue">
+
+    <com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton
+        android:id="@+id/button_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            style="@style/ButtonWithFontRobotoMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_arrow_left_button"
+            tools:text="PREV"
+            />
+
+    </com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton>
+
+    <TextView
+        android:id="@+id/label_position"
+        style="@style/FontH5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:lineSpacingExtra="0dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:textColor="@color/white_70"
+        android:visibility="invisible"
+        tools:text="1 of 4"
+        tools:visibility="visible"/>
+
+    <com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="NEXT">
+
+        <TextView
+            style="@style/ButtonWithFontRobotoMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_arrow_right_button"
+            tools:text="NEXT"
+            />
+
+    </com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton>
+</LinearLayout>

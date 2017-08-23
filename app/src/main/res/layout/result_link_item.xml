@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/result_label_link"
+    style="@style/FontLink"
+    android:background="?attr/selectableItemBackground"
+    android:layout_gravity="center_vertical"
+    android:textColor="@color/french_blue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:text="@string/lorem_short_label"/>

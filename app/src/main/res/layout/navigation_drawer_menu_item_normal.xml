@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?attr/selectableItemBackground"
+              android:gravity="center_vertical"
+              android:paddingEnd="@dimen/medium_margin"
+              android:paddingStart="@dimen/medium_margin">
+
+    <ImageView
+        android:id="@+id/nav_item_icon"
+        android:layout_width="@dimen/nav_item_image_size"
+        android:layout_height="@dimen/nav_item_image_size"/>
+
+    <TextView
+        android:id="@+id/nav_item_text"
+        style="@style/FontH5medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_16"
+        android:paddingBottom="@dimen/padding_16"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/medium2_margin"
+        android:textColor="@color/black_54"
+        tools:text="My dashboard"/>
+</LinearLayout>

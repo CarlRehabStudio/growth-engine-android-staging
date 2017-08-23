@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/screen_edge_horizontal_margin"
+            android:paddingStart="@dimen/screen_edge_horizontal_margin"
+            android:paddingTop="@dimen/screen_edge_vertical_margin">
+
+            <TextView
+                android:id="@+id/practice_fortune_wheel_page_question"
+                style="@style/FontH5medium.ActivityTitle"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                tools:text="@string/lorem_medium"/>
+
+            <TextView
+                android:id="@+id/practice_fortune_wheel_page_text"
+                style="@style/FontH4medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingTop="@dimen/padding_0"
+                tools:text="@string/lorem_short"/>
+
+            <com.google.android.apps.miyagi.development.ui.practice.fortunewheel.widget.FortuneWheel
+                android:id="@+id/practice_fortune_wheel_page_main_widget"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                app:labelTextColor="@color/white"
+                app:labelTextSize="@dimen/practice_fortune_wheel_main_widget_label_text_size"
+                app:markerDrawable="@drawable/ic_mark"
+                app:maxHeight="300dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:id="@+id/practice_fortune_wheel_page_selected_option_info_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="@dimen/screen_edge_horizontal_margin"
+            android:layout_marginEnd="@dimen/screen_edge_horizontal_margin"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/screen_edge_horizontal_margin"
+            android:paddingStart="@dimen/screen_edge_horizontal_margin">
+
+            <TextView
+                android:id="@+id/practice_fortune_wheel_page_selected_option_label"
+                style="@style/FontH5medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/small_margin"
+                android:background="@drawable/circle"
+                android:layout_toLeftOf="@id/practice_fortune_wheel_page_selected_option_text"
+                android:gravity="center"
+                android:lineSpacingExtra="0sp"
+                android:minHeight="@dimen/practice_fortune_wheel_selected_sector_label_size"
+                android:minWidth="@dimen/practice_fortune_wheel_selected_sector_label_size"
+                android:paddingTop="@dimen/padding_0"
+                android:layout_alignBaseline="@+id/practice_fortune_wheel_page_selected_option_text"
+                android:paddingBottom="@dimen/padding_0"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:text="A"/>
+
+            <TextView
+                android:id="@+id/practice_fortune_wheel_page_selected_option_text"
+                style="@style/FontH5medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:lineSpacingExtra="0sp"
+                tools:text="@string/lorem_short"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/practice_fortune_wheel_page_widget_instruction_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingEnd="@dimen/screen_edge_horizontal_margin"
+            android:paddingStart="@dimen/screen_edge_horizontal_margin"
+            android:paddingTop="@dimen/medium_margin">
+
+            <ImageView
+                android:layout_width="@dimen/practice_fortune_wheel_widget_instruction_icon_size"
+                android:layout_height="@dimen/practice_fortune_wheel_widget_instruction_icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/small_margin"
+                android:src="@drawable/ic_spin"/>
+
+            <TextView
+                android:id="@+id/practice_fortune_wheel_page_widget_instruction_text"
+                style="@style/FontH5medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="0dp"
+                tools:text="@string/lorem_short"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="@dimen/practice_fortune_wheel_widget_instruction_icon_size"
+                android:layout_height="@dimen/practice_fortune_wheel_widget_instruction_icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/small_margin"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

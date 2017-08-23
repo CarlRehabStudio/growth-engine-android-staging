@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="TopicProgressBar">
+        <attr name="mainColor" format="color"/>
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="lessonsCompletedAlpha" format="float"/>
+        <attr name="lessonsWatchedAlpha" format="float"/>
+        <attr name="totalLessonsAlpha" format="float"/>
+    </declare-styleable>
+</resources>

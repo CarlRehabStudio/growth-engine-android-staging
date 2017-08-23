@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:background="@color/french_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingTop="@dimen/tiny_margin">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+
+        <com.google.android.apps.miyagi.development.ui.components.widget.GifImageView
+            android:id="@+id/gif_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:id="@+id/label_header"
+            style="@style/FontH1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingEnd="@dimen/medium_margin"
+            android:paddingStart="@dimen/medium_margin"
+            tools:text="Congratulations!"/>
+
+        <TextView
+            android:id="@+id/label_description"
+            style="@style/FontBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingEnd="@dimen/medium_margin"
+            android:paddingStart="@dimen/medium_margin"
+            android:textColor="@color/white_on_blue"
+            tools:text="You can try to get your wrong questions right, just select the answer you think might be the correct one."/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/badge_label_share"
+                style="@style/FontBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:lineSpacingExtra="0sp"
+                android:textColor="@color/white"
+                tools:text="@string/lorem_short_label"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/button_share"
+                android:layout_width="@dimen/lesson_fab_size"
+                android:layout_height="@dimen/lesson_fab_size"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:scaleType="center"
+                android:src="@drawable/ic_share"
+                android:tint="@color/french_blue"
+                app:backgroundTint="@color/white"
+                app:elevation="@dimen/lesson_fab_elevation"
+                app:fabSize="mini"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalDividerOnePx"
+        android:background="@color/white_30"/>
+
+    <include
+        layout="@layout/assessment_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

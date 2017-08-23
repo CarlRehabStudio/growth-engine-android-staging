@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_16"
+        android:paddingTop="@dimen/padding_16">
+
+        <TextView
+            android:id="@+id/strike_selector_header"
+            style="@style/FontH5medium.ActivityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Two of her ideas are correct and two are not. Can you weed out the wrong ones?"/>
+
+        <FrameLayout
+            android:layout_width="@dimen/practice_activity_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <FrameLayout
+                    android:id="@+id/note_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium2_margin"
+                    android:background="@drawable/note_background">
+
+                    <FrameLayout
+                        android:id="@+id/note_cards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ilu_note_2"
+                        android:orientation="vertical"
+                        android:padding="@dimen/medium_margin">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/strike_through_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </FrameLayout>
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ilu_note_3"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

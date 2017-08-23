@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_topic"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/small_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:paddingStart="@dimen/screen_edge_horizontal_margin">
+
+        <TextView
+            android:id="@+id/label_title"
+            style="@style/FontH3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:paddingTop="@dimen/tiny_margin"
+            tools:text="@string/lorem_medium"/>
+
+        <include layout="@layout/topic_file_progress_layout"/>
+
+        <ImageView
+            android:id="@+id/image_more"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dashboard_icon_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingEnd="@dimen/padding_16"
+            android:paddingStart="@dimen/padding_16"
+            android:scaleType="center"
+            android:src="@drawable/ic_sysbar_menu"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/small_margin"
+        android:paddingLeft="@dimen/screen_edge_horizontal_margin"
+        android:paddingRight="@dimen/screen_edge_horizontal_margin">
+
+        <TextView
+            android:id="@+id/label_description"
+            style="@style/FontBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/lorem_long"/>
+
+        <com.google.android.apps.miyagi.development.ui.dashboard.view.TopicProgressBar
+            android:id="@+id/view_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium2_margin"
+            app:cornerRadius="@dimen/progress_bar_corner_radius"/>
+
+        <TextView
+            android:id="@+id/progress_label"
+            style="@style/FontCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/small_margin"
+            tools:text="@string/lorem_short_label"/>
+
+        <TextView
+            android:id="@+id/label_continue"
+            style="@style/FontLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingTop="0dp"
+            android:textAllCaps="true"
+            tools:text="CONTINUE"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_bottom"
+        style="@style/HorizontalDividerOnePx"
+        android:layout_marginTop="@dimen/small_margin"/>
+</LinearLayout>

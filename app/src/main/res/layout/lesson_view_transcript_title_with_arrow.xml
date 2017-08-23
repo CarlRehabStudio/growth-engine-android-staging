@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/screen_edge_horizontal_margin"
+    android:paddingRight="@dimen/screen_edge_horizontal_margin">
+
+    <TextView
+        android:id="@+id/lesson_label_transcript_title"
+        style="@style/FontH5medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:textAllCaps="true"
+        android:textColor="@color/french_blue"
+        tools:text="View transcript"/>
+
+    <ImageView
+        android:id="@+id/lesson_image_transcript_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        tools:src="@drawable/ic_arrow_down"/>
+</LinearLayout>

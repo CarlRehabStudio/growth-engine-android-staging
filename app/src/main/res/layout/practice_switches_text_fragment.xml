@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/screen_edge_vertical_margin"
+        android:paddingTop="@dimen/padding_16">
+
+        <TextView
+            android:id="@+id/switches_selector_header"
+            style="@style/FontH5medium.ActivityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Two of her ideas are correct and two are not. Can you weed out the wrong ones?"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/switches_recycler_view"
+                android:layout_width="@dimen/practice_activity_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:listitem="@layout/practice_switches_text_item"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

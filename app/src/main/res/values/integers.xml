@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- .....................................................................  Statistics -->
+    <integer name="statistics_progress_angle">270</integer>
+    <integer name="statistics_progress_init_angle">0</integer>
+
+    <integer name="animation_duration">400</integer>
+    <integer name="animation_fade_duration">400</integer>
+    <integer name="animation_cta_start_offset">250</integer>
+    <integer name="animation_cta_offset">120</integer>
+    <integer name="animation_fab_duration">200</integer>
+
+    <!-- .....................................................................  Snackbar-->
+    <integer name="snackbar_duration">9000</integer>
+
+    <!-- .....................................................................  Layouts-->
+    <integer name="narrower_horizontal_container_percentage">37</integer>
+    <integer name="wider_horizontal_container_percentage">63</integer>
+    <integer name="narrower_vertical_container_percentage">33</integer>
+    <integer name="wider_vertical_container_percentage">67</integer>
+
+    <integer name="diagnostics_step_two_text_column_weight">4</integer>
+</resources>

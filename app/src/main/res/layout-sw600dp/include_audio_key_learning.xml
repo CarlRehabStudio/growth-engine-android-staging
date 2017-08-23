@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/screen_edge_horizontal_margin"
+        android:layout_marginRight="@dimen/screen_edge_horizontal_margin"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/screen_edge_vertical_margin"
+        android:paddingTop="@dimen/screen_edge_vertical_margin">
+
+        <TextView
+            android:id="@+id/audio_label_key_learning"
+            style="@style/FontBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            tools:text="Key learnings"/>
+
+        <WebView
+            android:id="@+id/audio_web_view_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:paddingBottom="0dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/audio_label_share"
+                style="@style/FontBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:lineSpacingExtra="0sp"
+                android:text="Share"
+                tools:text="@string/lorem_short_label"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="@dimen/lesson_fab_size"
+                android:layout_height="@dimen/lesson_fab_size"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:scaleType="center"
+                android:src="@drawable/ic_share"
+                android:tint="@color/french_blue"
+                android:tintMode="src_atop"
+                app:backgroundTint="@color/white"
+                app:elevation="@dimen/lesson_fab_elevation"
+                app:fabSize="mini"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/HorizontalDivider"/>
+
+    <include
+        android:id="@+id/audio_view_transcipt_title"
+        layout="@layout/lesson_view_transcript_title_with_arrow"/>
+
+    <com.google.android.apps.miyagi.development.ui.components.widget.ExpandableLinearLayout
+        android:id="@+id/audio_view_transcript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/screen_edge_horizontal_margin"
+        android:layout_marginRight="@dimen/screen_edge_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/audio_transcript_text"
+            style="@style/FontBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/large_margin"
+            android:paddingTop="0dp"
+            tools:text="@string/lorem_long"/>
+    </com.google.android.apps.miyagi.development.ui.components.widget.ExpandableLinearLayout>
+
+    <View style="@style/HorizontalDivider"/>
+</LinearLayout>

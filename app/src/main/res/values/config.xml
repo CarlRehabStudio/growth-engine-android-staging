@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isTablet">false</bool>
+
+    <!-- TODO get Youtube Developer Key for Miyagi -->
+    <string name="youtube_developer_key" translatable="false">AIzaSyDPdHua6m8JbrW_MMt7d23Dw7WiTMhSySA</string>
+    <string name="api_date_format" translatable="false">yyyy/MM/dd HH:mm:ss</string>
+    <integer name="api_read_timeout_sek" translatable="false">60</integer>
+    <integer name="api_connect_timeout_sek" translatable="false">60</integer>
+
+    <integer name="splash_screen_delay_ms" translatable="false">500</integer>
+    <!-- TODO set valid urls in all flavors -->
+    <string name="base_service_url" translatable="false">https://learndigital.withgoogle.com/</string>
+
+    <bool name="isSmallDevice">true</bool>
+</resources>

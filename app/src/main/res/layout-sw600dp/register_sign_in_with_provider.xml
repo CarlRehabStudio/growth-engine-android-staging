@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/sign_in_vertical_margin"
+    android:paddingEnd="@dimen/sign_in_horizontal_margin"
+    android:paddingStart="@dimen/sign_in_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="@dimen/sign_in_with_provider_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/splash"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:id="@+id/label_email"
+            style="@style/FontH4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_0"
+            android:paddingEnd="@dimen/medium2_margin"
+            android:paddingStart="@dimen/medium2_margin"
+            android:textAlignment="center"
+            tools:text="your.mail@example.com"/>
+
+        <TextView
+            android:id="@+id/label_message"
+            style="@style/FontH4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4sp"
+            android:paddingEnd="@dimen/medium2_margin"
+            android:paddingStart="@dimen/medium2_margin"
+            android:textAlignment="center"
+            tools:text="You have used to log in with Google before"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_sign_in_with_provider"
+            style="@style/LoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:drawableStart="@drawable/ic_mail"
+            android:gravity="start|center_vertical"
+            tools:text="Sign in with e-mail"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/audio_player_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/large_margin"
+    tools:background="@color/french_blue">
+
+    <TextView
+        android:id="@+id/label_topic_title"
+        style="@style/PlayerCurrentLessonLabelStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tiny_margin"
+        android:paddingEnd="@dimen/medium_margin"
+        android:paddingStart="@dimen/medium_margin"
+        tools:text="The online opportunity"/>
+
+    <TextView
+        android:id="@+id/label_lesson_title"
+        style="@style/FontH1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="0sp"
+        android:paddingBottom="0dp"
+        android:paddingEnd="@dimen/medium_margin"
+        android:paddingStart="@dimen/medium_margin"
+        android:paddingTop="0dp"
+        tools:text="Marketing your online presence"/>
+
+    <!-- Progress bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/medium_margin"
+        android:paddingStart="@dimen/medium_margin">
+
+        <TextView
+            android:id="@+id/label_cue_point"
+            style="@style/PlayerTimeLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            tools:text="03:27"/>
+
+        <com.google.android.apps.miyagi.development.ui.audio.AudioSeekBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/medium_margin"
+            android:paddingEnd="@dimen/medium_margin"
+            android:paddingStart="@dimen/medium_margin"
+            android:paddingTop="@dimen/medium_margin"/>
+
+        <TextView
+            android:id="@+id/label_duration"
+            style="@style/PlayerTimeLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:lineSpacingExtra="0sp"
+            tools:text="15:57"/>
+    </LinearLayout>
+
+    <!-- buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/large_margin">
+
+        <ImageView
+            android:id="@+id/button_rewind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="center"
+            android:src="@drawable/ic_player_rewind"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/button_rewind15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="center"
+            android:src="@drawable/ic_player_1_5_reply"
+            tools:ignore="ContentDescription"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/button_play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_player_play"
+                app:fabSize="normal"
+                app:useCompatPadding="true"/>
+
+            <ProgressBar
+                android:id="@+id/audio_buffer_progress"
+                android:layout_width="@dimen/list_progress_size"
+                android:layout_height="@dimen/list_progress_size"
+                android:layout_gravity="center"
+                android:theme="@style/ProgressBarWhite"
+                android:translationZ="10dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/button_forward15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="center"
+            android:src="@drawable/ic_player_1_5_forward"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/button_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="center"
+            android:src="@drawable/ic_player_forward"
+            tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</LinearLayout>

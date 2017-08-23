@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="labelTextSize" format="dimension"/>
+    <attr name="labelTextColor" format="color"/>
+    <attr name="strokeWidth" format="dimension"/>
+    <attr name="shadowAlpha" format="float"/>
+    <attr name="bgColor" format="color"/>
+
+    <declare-styleable name="FortuneWheel">
+        <attr name="markerDrawable" format="reference"/>
+        <attr name="markerColor" format="color"/>
+        <attr name="maxHeight" format="dimension"/>
+        <attr name="labelTextColor"/>
+        <attr name="labelTextSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="ClockWidget">
+        <attr name="strokeWidth"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="pointerThickness" format="dimension"/>
+        <attr name="pointerCircleRadius" format="dimension"/>
+        <attr name="pointerColor" format="color"/>
+        <attr name="bgColor"/>
+        <attr name="shadowAlpha"/>
+        <attr name="pointerShadowOffsetX" format="dimension"/>
+        <attr name="pointerShadowOffsetY" format="dimension"/>
+        <attr name="pointerDotRadius" format="dimension"/>
+        <attr name="shadowBlurRadius" format="dimension"/>
+        <attr name="labelTextSize"/>
+        <attr name="scaleIndicatorLength" format="dimension"/>
+        <attr name="labelPadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TransparentCircleLayout">
+        <attr name="holeCircleLeftOffset" format="dimension"/>
+        <attr name="shadowAlpha"/>
+        <attr name="dashStrokeAlpha" format="float"/>
+        <attr name="strokeWidth"/>
+        <attr name="holeRadius" format="dimension"/>
+        <attr name="cornerRoundness" format="dimension"/>
+        <attr name="dashOnDistance" format="dimension"/>
+        <attr name="dashOffDistance" format="dimension"/>
+        <attr name="shadowRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="StrokeButton">
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="corner_radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="AdjustableImageView">
+        <attr name="ratio"/>
+    </declare-styleable>
+    <attr name="ratio">
+        <enum name="medium" value="1"/>
+        <enum name="dashboard" value="2"/>
+        <enum name="medium_tablet" value="3"/>
+        <enum name="dashboard_tablet" value="4"/>
+    </attr>
+
+    <declare-styleable name="AudioSeekBar">
+        <attr name="thumbSize" format="dimension"/>
+        <attr name="trackHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

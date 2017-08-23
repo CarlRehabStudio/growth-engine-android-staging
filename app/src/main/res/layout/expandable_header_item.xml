@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dashboard_topic_group_height"
+    tools:background="@color/french_blue">
+
+    <View
+        android:id="@+id/divider_top"
+        style="@style/HorizontalDividerOnePx"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/image_expand_collapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:scaleType="center"
+        tools:src="@drawable/ic_arrow_up"/>
+
+    <TextView
+        android:id="@+id/label_title"
+        style="@style/FontH5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:lineSpacingExtra="0sp"
+        android:maxLines="2"
+        android:paddingEnd="@dimen/padding_35"
+        android:paddingStart="@dimen/padding_35"
+        android:textColor="@color/white"
+        tools:text="@string/lorem_title"/>
+</RelativeLayout>

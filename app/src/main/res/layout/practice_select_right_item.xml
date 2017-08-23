@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/select_right_item_text"
+        style="@style/FontH5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:gravity="center"
+        tools:text="@string/lorem_short"/>
+
+    <com.google.android.apps.miyagi.development.ui.components.widget.SelectRightView
+        android:id="@+id/select_right_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingEnd="@dimen/medium2_margin"
+        android:paddingStart="@dimen/medium2_margin"
+        android:paddingTop="@dimen/small_margin"
+        app:rw_max_width="@dimen/practice_activity_width"/>
+</LinearLayout>

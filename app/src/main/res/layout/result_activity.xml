@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lesson_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.result.ResultActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@color/black_38">
+
+        <include layout="@layout/include_app_bar_white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/result_image_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.apps.miyagi.development.ui.components.widget.AdjustableImageView
+                            android:id="@+id/result_image_intro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            app:ratio="medium"/>
+
+                        <ImageView
+                            android:id="@+id/result_image_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/screen_edge_vertical_margin"
+                        android:paddingTop="@dimen/screen_edge_vertical_margin">
+
+                        <TextView
+                            android:id="@+id/result_label_header"
+                            style="@style/FontH2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/screen_edge_horizontal_margin"
+                            android:layout_marginRight="@dimen/screen_edge_horizontal_margin"
+                            tools:text="@string/lorem_short_label"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/screen_edge_horizontal_margin"
+                            android:layout_marginRight="@dimen/screen_edge_horizontal_margin">
+
+                            <WebView
+                                android:id="@+id/result_web_view_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0dp"
+                                android:padding="0dp"/>
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/result_button_cta"
+                            style="@style/FontH5medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="?attr/selectableItemBackground"
+                            android:layout_marginLeft="@dimen/screen_edge_horizontal_margin"
+                            android:layout_marginRight="@dimen/screen_edge_horizontal_margin"
+                            android:paddingBottom="@dimen/padding_16"
+                            android:textAllCaps="true"
+                            android:textColor="@color/french_blue"
+                            tools:text="@string/lorem_short_label"/>
+
+                        <LinearLayout
+                            android:id="@+id/result_extras"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/screen_edge_horizontal_margin"
+                            android:layout_marginRight="@dimen/screen_edge_horizontal_margin"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                style="@style/HorizontalDivider"
+                                android:layout_marginBottom="@dimen/padding_30"
+                                android:layout_marginTop="@dimen/padding_16"/>
+
+                            <TextView
+                                android:id="@+id/result_label_next_header"
+                                style="@style/FontH5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="@dimen/padding_22"
+                                android:paddingTop="0dp"
+                                tools:text="@string/lorem_short_label"/>
+
+                            <TextView
+                                android:id="@+id/result_label_next_description"
+                                style="@style/FontBody"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="@string/lorem_long"/>
+
+                            <View
+                                style="@style/HorizontalDivider"
+                                android:layout_marginBottom="@dimen/padding_30"
+                                android:layout_marginTop="@dimen/padding_30"/>
+
+                            <TextView
+                                android:id="@+id/result_label_links_header"
+                                style="@style/FontH5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="@dimen/small_margin"
+                                android:paddingTop="0dp"
+                                tools:text="@string/lorem_short_label"/>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/result_links"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/topic_extras"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                style="@style/HorizontalDivider"
+                                android:layout_marginBottom="@dimen/padding_30"
+                                android:layout_marginTop="@dimen/padding_30"
+                                android:layout_marginLeft="@dimen/screen_edge_horizontal_margin"
+                                android:layout_marginRight="@dimen/screen_edge_horizontal_margin"/>
+
+                            <TextView
+                                android:id="@+id/lesson_label_all_lessons_title"
+                                style="@style/FontH5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/screen_edge_horizontal_margin"
+                                android:layout_marginRight="@dimen/screen_edge_horizontal_margin"
+                                android:paddingBottom="@dimen/padding_30"
+                                android:paddingTop="@dimen/padding_30"
+                                tools:text="All lessons in Build your web presence (6)"/>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/lesson_list_topic_lesson"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:nestedScrollingEnabled="false"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <include
+                layout="@layout/include_bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include
+        android:id="@+id/result_preloader"
+        layout="@layout/include_fullscreen_preloader"
+        tools:visibility="gone"/>
+</FrameLayout>

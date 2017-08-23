@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/twitter_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/twitter_page_height"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    app:cardUseCompatPadding="true">
+
+    <com.google.android.apps.miyagi.development.ui.components.widget.AutoResizeTextView
+        android:id="@+id/twitter_card_text"
+        style="@style/FontH5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/small_margin"
+        tools:text="Love cake? So do we. Here at Knead to Know Bakery we have a passion and reputation  for creating the most delicious cookies, cakes and bread."/>
+</android.support.v7.widget.CardView>

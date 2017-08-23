@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/screen_edge_vertical_margin"
+        android:paddingEnd="@dimen/screen_edge_horizontal_margin"
+        android:paddingStart="@dimen/screen_edge_horizontal_margin"
+        android:paddingTop="@dimen/screen_edge_vertical_margin">
+
+        <TextView
+            android:id="@+id/boolean_selector_header"
+            style="@style/FontH5medium.ActivityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="Two of her ideas are correct and two are not. Can you weed out the wrong ones?"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <com.google.android.apps.miyagi.development.ui.components.widget.cards.CardsSelector
+                android:id="@+id/card_stack_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:max_width="@dimen/practice_max_width"/>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

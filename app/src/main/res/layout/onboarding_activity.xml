@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/onboarding_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:fitsSystemWindows="false"
+                android:orientation="vertical"
+                tools:background="@color/black_38"
+                tools:context=".ui.onboarding.OnboardingActivity">
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/diagnostics_bottom_divider_height"
+            android:background="#33ffffff"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton
+                android:id="@+id/button_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    style="@style/ButtonWithFontRobotoMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="PREV"
+                    />
+
+            </com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton>
+
+            <com.google.android.apps.miyagi.development.ui.components.widget.InkPageIndicator
+                android:id="@+id/bottom_nav_dot_pager_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:animationDuration="@integer/animation_duration"
+                app:currentPageIndicatorColor="@color/white"
+                app:dotDiameter="@dimen/paging_indicator_dot_diameter"
+                app:dotGap="@dimen/paging_indicator_gap"
+                app:pageIndicatorColor="@color/white_30"/>
+
+            <com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    style="@style/ButtonWithFontRobotoMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_arrow_right_button"
+                    tools:text="NEXT"
+                    />
+
+            </com.google.android.apps.miyagi.development.ui.components.widget.NavigationButton>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.apps.miyagi.development.ui.onboarding.common.OnboardingViewPager
+        android:id="@+id/onboarding_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:clipChildren="false"
+        android:clipToPadding="false"/>
+
+    <include
+        android:id="@+id/onboarding_error"
+        layout="@layout/include_fullscreen_error"
+        tools:visibility="gone"/>
+
+    <include
+        android:id="@+id/onboarding_preloader"
+        layout="@layout/include_fullscreen_preloader"
+        tools:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="register_market_selection_title">Wybierz język / kraj</string>
+
+    <string name="error_first_request_failed">Ups, coś poszło nie tak. Sprawdź, czy jesteś połączony z internetem.</string>
+    <string name="error_first_request_failed_cta">Spróbuj ponownie</string>
+    
+</resources>

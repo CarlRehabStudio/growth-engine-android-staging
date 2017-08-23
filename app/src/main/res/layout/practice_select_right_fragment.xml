@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/screen_edge_vertical_margin"
+        android:paddingTop="@dimen/padding_16">
+
+        <TextView
+            android:id="@+id/select_right_header"
+            style="@style/FontH5medium.ActivityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Two of her ideas are correct and two are not. Can you weed out the wrong ones?"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/select_right_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/practice_select_right_item"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

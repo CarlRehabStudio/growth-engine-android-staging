@@ -1,0 +1,94 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="app_name">Learn Digital</string>
+
+    <string name="register_market_selection_title">Choose your language/country</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_appbar_scrolling_view_behavior" translatable="false">com.google.android.apps.miyagi.development.ui.dashboard.support.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+    <!-- Debug -->
+    <string name="lorem_short_label">Lorem ipsum</string>
+    <string name="lorem_title">Lorem ipsum dolor sit amet</string>
+    <string name="lorem_short">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="lorem_medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</string>
+    <string name="lorem_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="error_youtube_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="lesson_header">Lesson (%1$d)</string>
+
+    <!-- Errors strings -->
+    <string name="error_first_request_failed">Oops something went wrong. Please check your internet connection.</string>
+    <string name="error_first_request_failed_cta">Try again</string>
+
+    <!-- Analytics -->
+    <!-- Parameters -->
+    <string name="parameter_screen">screenName</string>
+    <string name="parameter_category">eCat</string>
+    <string name="parameter_action">eAct</string>
+    <string name="parameter_label">eLab</string>
+    <string name="parameter_value">eVal</string>
+    <!-- Screens -->
+    <string name="screen_certification_assessment">/certification/assessment</string>
+    <string name="screen_create_plan">/create-your-plan</string>
+    <string name="screen_create_plan_goals">/create-your-plan/goals</string>
+    <string name="screen_create_plan_persona">/create-your-plan/persona</string>
+    <string name="screen_dashboard">/dashboard</string>
+    <string name="screen_lesson_onboarding">/lesson-onboarding</string>
+    <string name="screen_lesson">/lesson/%1$d</string>
+    <string name="screen_lesson_activity">/lesson/%1$d/activity</string>
+    <string name="screen_topic_audio">/lesson/%1$d/audio</string>
+    <string name="screen_topic_assessment">/topic/%1$d/assessment</string>
+    <string name="screen_topic_badge">/topic/%1$d/badge</string>
+    <string name="screen_profile">/profile</string>
+    <string name="screen_registration_account">/registration/account</string>
+    <string name="screen_registration_country">/registration/country</string>
+    <string name="screen_registration_sign_in">/registration/sign-in</string>
+    <string name="screen_registration_sign_up">/registration/sign-up</string>
+    <string name="screen_statistics">/statistics</string>
+    <!-- Events -->
+    <string name="event_category_user">user</string>
+    <string name="event_category_navigation">navigation</string>
+    <string name="event_category_activity">activity</string>
+    <string name="event_category_assessment">assessment</string>
+    <string name="event_category_audio">audio</string>
+    <string name="event_category_diagnostics">diagnostics</string>
+    <string name="event_category_registration">registration</string>
+    <string name="event_category_share">share</string>
+    <string name="event_category_transcript">transcript</string>
+    <string name="event_category_video">video</string>
+    <string name="event_category_push">push-notification</string>
+    <string name="event_category_screen">screenview</string>
+
+    <string name="event_action_registered">registered</string>
+    <string name="event_action_menu_click">menu-click</string>
+    <string name="event_action_feedback">feedback</string>
+    <string name="event_action_open">open</string>
+    <string name="event_action_download">download</string>
+    <string name="event_action_play">play</string>
+    <string name="event_action_pause">pause</string>
+    <string name="event_action_skip_back">skip-back</string>
+    <string name="event_action_skip_forward">skip-forward</string>
+    <string name="event_action_chapter_back">chapter-back</string>
+    <string name="event_action_chapter_forward">chapter-forward</string>
+    <string name="event_action_select_option">select-option</string>
+    <string name="event_action_down">down</string>
+    <string name="event_action_up">up</string>
+    <string name="event_action_button">button</string>
+    <string name="event_action_share">share</string>
+    <string name="event_action_end">end</string>
+
+    <string name="event_label_true">true</string>
+    <string name="event_label_false">false</string>
+    <string name="event_label_partial">partial</string>
+    <string name="event_label_down_arrow">down_arrow</string>
+    <string name="event_label_up_arrow">down_arrow</string>
+    <string name="event_label_hamburger">hamburger</string>
+    <string name="event_label_info">info</string>
+
+    <!-- Used for unknown content description, i.e. drawer open / close -->
+    <string name="empty"></string>
+
+    <string name="error_message_update_google_play_services">This app won\'t run unless you update Google Play Services.</string>
+
+</resources>
